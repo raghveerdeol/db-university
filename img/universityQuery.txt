@@ -61,4 +61,6 @@ WHERE `name` = 'pietro' && `surname` = 'rizzo';
 
 QUERY 11:
 
+DELETE FROM students 
+WHERE name ='raghveer' && surname = 'deol' && date_of_birth = '1996-08-12';
 
