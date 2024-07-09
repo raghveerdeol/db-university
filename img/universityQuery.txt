@@ -29,3 +29,36 @@ QUERY 5:
 SELECT * 
 FROM `exams` 
 WHERE `date` = "2020-06-20" && `hour` > "14:00:00";
+
+QUERY 6:
+
+SELECT * 
+FROM `degrees` 
+WHERE `level` = "magistrale";
+
+QUERY 7:
+
+SELECT COUNT(id) 
+FROM `departments`;
+
+QUERY 8:
+
+SELECT * 
+FROM `teachers` 
+WHERE IsNull(phone);
+
+QUERY 9:
+
+INSERT INTO students (degree_id, name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email)
+VALUES ('33', 'raghveer', 'deol',  '1996-08-12', 'dlerhv96m12z222o', '2024-03-27', '478628', 'raghveerdeol1@gmail.com');
+
+
+QUERY 10:
+
+UPDATE teachers
+SET office_number = 126
+WHERE `name` = 'pietro' && `surname` = 'rizzo';
+
+QUERY 11:
+
+
