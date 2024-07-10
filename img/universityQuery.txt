@@ -22,13 +22,15 @@ query 4:
 
 SELECT * 
 FROM `courses` 
-WHERE `period` = "I semestre" && `year` = 1;
+WHERE `period` = "I semestre"
+AND `year` = 1;
 
 QUERY 5:
 
 SELECT * 
 FROM `exams` 
-WHERE `date` = "2020-06-20" && `hour` > "14:00:00";
+WHERE `date` = "2020-06-20"
+AND `hour` > "14:00:00";
 
 QUERY 6:
 
@@ -57,10 +59,13 @@ QUERY 10:
 
 UPDATE teachers
 SET office_number = 126
-WHERE `name` = 'pietro' && `surname` = 'rizzo';
+WHERE `name` = 'pietro'
+AND `surname` = 'rizzo';
 
 QUERY 11:
 
 DELETE FROM students 
-WHERE name ='raghveer' && surname = 'deol' && date_of_birth = '1996-08-12';
+WHERE name ='raghveer'
+AND surname = 'deol'
+AND date_of_birth = '1996-08-12';
 
